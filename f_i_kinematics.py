@@ -1,7 +1,6 @@
 import math
 import numpy as np
 
-# claxx Kinematics
 pi = 3.1415926535897932384626433832795
 # 初始姿态
 offset2 = -pi/2;offset3 = -pi/2
@@ -233,7 +232,7 @@ def rpyTopose(Matrix6):
     
     Matrix44 = I
     return Matrix44
-
+# 使用 git clone https://github.com/PatrickRayShaw/kinematics.git 下载程序使用
 def inverse_kinematics(input_matrix):
     """
     机器人逆运动学计算
@@ -533,5 +532,6 @@ if __name__ == "__main__":
                 matrix = list(map(float, input("请输入xyzrpy（空格分隔）: ").split()))
                 matrix_input = [matrix[0], matrix[1], matrix[2],matrix[3], matrix[4],matrix[5]]
         final_kinematics(fk_or_ik,matrix_input)
+# 使用 git clone https://github.com/PatrickRayShaw/kinematics.git 下载程序使用
         
-        
+
